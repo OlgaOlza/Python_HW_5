@@ -2,11 +2,13 @@
 # возводит число a в целую степень b с помощью рекурсии.
 # Функция не должна ничего выводить, только возвращать значение.
 
-a = 3; b = 5 #-> 243 (3⁵)
+# a = 3; b = 5 #-> 243 (3⁵)
 # a = 2; b = 3 #-> 8 
-def exponent(a:int,b:int) -> int:
-    if b == 0:
-        return 1
-    return a * exponent(a,b-1)
 
-print(exponent(2,10))
+a = 3
+b = 5
+def f(a, b):
+  if b == 0:
+    return 1
+  return f(a, b - 1) * a
+print(def)
